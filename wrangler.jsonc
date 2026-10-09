@@ -1,0 +1,41 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+
+  "main": ".open-next/worker.js",
+
+  "name": "organization-membership",
+
+  "compatibility_date": "2026-10-01",
+
+  "compatibility_flags": [
+  "nodejs_compat",
+  "global_fetch_strictly_public"
+],
+
+  "vars": {
+  "NEXT_PUBLIC_SUPABASE_URL": "YOUR_SUPABASE_URL",
+  "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY": "YOUR_PUBLISHABLE_KEY",
+  "NEXT_PUBLIC_SITE_URL": "https://organization-membership.txd-org.workers.dev"
+  },
+
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "organization-membership"
+    }
+  ],
+
+  "images": {
+    "binding": "IMAGES"
+  },
+
+  "observability": {
+    "enabled": true
+  },
+
+}
