@@ -13,9 +13,10 @@
 ],
 
   "vars": {
-  "NEXT_PUBLIC_SUPABASE_URL": "YOUR_SUPABASE_URL",
-  "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY": "YOUR_PUBLISHABLE_KEY",
-  "NEXT_PUBLIC_SITE_URL": "https://organization-membership.txd-org.workers.dev"
+    "NEXTJS_ENV": "production",
+    "NEXT_PUBLIC_SITE_URL": "https://organization-membership.txd-org.workers.dev",
+    "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY": "sb_publishable_xi9e852Yta1QYZwz2viz7g_0gQdYIk6",
+    "NEXT_PUBLIC_SUPABASE_URL": "https://fxusmyejnaxaggdjqgtu.supabase.co"
   },
 
   "assets": {
